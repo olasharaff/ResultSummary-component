@@ -1,0 +1,209 @@
+body {
+    background-color: whitesmoke;
+}
+
+/* ----------------> FLEXBOX SECTION */
+
+.box {
+    color: white;
+    text-align: center;
+    /* margin: 10rem 0; */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+/* -----------------------------> BOX1 SECTION */
+
+.box1 {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 10px 0 10px 0;
+    position: relative;
+    z-index: 1;
+    max-width: 18.75em;
+    height: 24.06em;
+    border-radius: 20px;
+}
+
+.box1 p:first-child {
+    padding: 25px 0;
+}
+
+.circle {
+    max-width: 8em;
+    padding: 10px 0;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    height: 7em;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.circle p {
+    padding-top: -10px;
+    margin-top: -25px;
+    font-size: 10px;
+}
+
+.great {
+    font-size: 1.3em;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: bolder;
+}
+
+.box1 p:last-child {
+    padding: 8px 10px;
+    color: hsla(240, 3%, 87%, 0.808);
+}
+
+.result {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    color: hsla(240, 3%, 87%, 0.808);
+}
+
+.inner-circle p {
+    color: white;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: bolder;
+    font-size: 3rem;
+    padding: 0;
+    margin-bottom: -30px;
+}
+
+.inner-circle span {
+    font-family: 'Hanken Grotesk', sans-serif;
+    /* color: hsla(260, 3%, 21%, 0.692); */
+    font-size: 12px;
+    color: hsla(240, 3%, 87%, 0.596);
+}
+
+/* -----------------------------> BOX2 SECTION */
+
+.box2 {
+    max-width: 22em;
+    height: 24.06em;
+    position: relative;
+    right: 5px;
+    padding: 0 20px;
+    background-color: #ffffff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.box2 h3 {
+    padding: 20px 0 10px 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    color: black !important;
+    margin-left: -70%;
+}
+
+.box2 p {
+    max-width: 13rem;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+}
+
+.box2-icon {
+    padding-left: 1rem;
+}
+
+/* -----------------------------> SVG SECTION */
+
+.reaction {
+    background-color: rgba(0, 255, 255, 0.114);
+    color: aqua;
+}
+
+.memory {
+    background-color: rgba(255, 255, 0, 0.231);
+    color: hsl(39, 100%, 56%);
+    font-weight: bold;
+}
+
+.verbal {
+    background-color: rgba(81, 193, 109, 0.459);
+    color: rgb(58, 220, 26);
+}
+
+.visual {
+    background-color: rgba(114, 101, 181, 0.459);
+
+    color: hsl(39, 100%, 56%);
+    font-weight: bold;
+}
+
+.reaction,
+.verbal,
+.visual,
+.memory {
+    display: flex;
+    align-items: center;
+    height: 20px;
+
+}
+
+.reaction img,
+.verbal img,
+.visual img,
+.memory img {
+    height: 100%;
+    margin-right: 10px;
+}
+
+.reaction span {
+    margin: 0;
+}
+
+.number {
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: black;
+    padding-left: 45px;
+}
+
+.percentage {
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: hsla(260, 3%, 21%, 0.507);
+
+}
+
+/* -----------------------------> BUTTON CUSTOMIZE SECTION */
+
+.btn {
+    border: none;
+    border-radius: 35px;
+    width: 13rem;
+    height: 50px;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    font-family: 'Hanken Grotesk', sans-serif;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+
+
+/* -----------------------------> MOBILE VIIEW PORT */
+
+@media (max-width: 320px) {
+    .box2 {
+        min-width: 65vh;
+        margin-top: -10%;
+        margin-left: 8%;
+    }
+}
